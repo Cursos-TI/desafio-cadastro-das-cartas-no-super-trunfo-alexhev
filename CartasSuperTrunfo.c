@@ -4,81 +4,84 @@
 
 int main() {
    
-    char estado[2];
+    char estado_letra;
     char codigo[4];
     char cidade[50];
-    int populacao;
+    unsigned long int populacao;
     float area;
-    float pib;
+    double pib;
     int pturismo;
 
     printf("Digite uma letra de A a Z \n");
-    scanf("%s", estado);
-
+    scanf(" %c", &estado_letra);
+     
     printf("Digite 01 a 04: \n");
-    scanf("%s", &codigo);
-
+    scanf("%s", codigo);
+    
     printf("Digite a cidade: \n");
-    scanf("%s", &cidade);
-
+    scanf(" %[^\n]", cidade);
+    
     printf("População total: \n");
-    scanf("%d", &populacao);
-
+    scanf("%lu", &populacao);
+    
     printf("Digite a área total: \n");
     scanf("%f", &area);
-
+    
     printf("Pib per capta: \n");
-    scanf("%f", &pib);
-
+    scanf("%lf", &pib);
+    
     printf("Número de pontos turísticos: \n");
-    scanf("%u", &pturismo);
+    scanf("%d", &pturismo);
 
-
-    printf("Estado digitado: %s \n", estado);
-    printf("Código digitado: %s%s \n",estado, codigo);
-    printf("Cidade:%s \n", cidade);
-    printf("População total: %d \n", populacao);
-    printf("Área total: %f \n", area);
-    printf("Pib total: %f \n", pib);
-    printf("Número total turistas: %u \n", pturismo);
- 
-   char estado2[2];
+    //Recomeçando pra as cartas 2:
+    char estado_letra2;
     char codigo2[4];
     char cidade2[50];
-    int populacao2;
+    unsigned long int populacao2;
     float area2;
-    float pib2;
+    double pib2;
     int pturismo2;
+    
 
+    //informações pra digitar:
     printf("Digite uma letra de A a Z \n");
-    scanf("%s", estado2);
-
+    scanf(" %c", &estado_letra2);
+     
     printf("Digite 01 a 04: \n");
-    scanf("%s", &codigo2);
-
+    scanf("%s", codigo2);
+    
     printf("Digite a cidade: \n");
-    scanf("%s", &cidade2);
-
+    scanf(" %[^\n]", cidade2);
+    
     printf("População total: \n");
-    scanf("%d", &populacao2);
-
+    scanf("%lu", &populacao2);
+    
     printf("Digite a área total: \n");
     scanf("%f", &area2);
-
+    
     printf("Pib per capta: \n");
-    scanf("%f", &pib2);
-
+    scanf("%lf", &pib2);
+    
     printf("Número de pontos turísticos: \n");
-    scanf("%u", &pturismo2);
+    scanf("%d", &pturismo2);
 
-
-    printf("Estado digitado: %s \n", estado2);
-    printf("Código digitado: %s%s \n",estado2, codigo2);
-    printf("Cidade:%s \n", cidade2);
-    printf("População total: %d \n", populacao2);
-    printf("Área total: %f \n", area2);
-    printf("Pib total: %f \n", pib2);
-    printf("Número total turistas: %u \n", pturismo2);
+    //Exibindo parte 1:
+    printf("Estado digitado: %c \n", estado_letra);
+    printf("Código digitado: %c%s \n",estado_letra, codigo);
+    printf("Cidade: %s \n", cidade);
+    printf("População total: %lu \n", populacao);
+    printf("Área total: %.2f \n", area);
+    printf("Pib total: %.2f \n", pib);
+    printf("Número total turistas: %d \n", pturismo);
+    
+    //Exibindo cartas 2:
+    printf("Estado digitado: %c \n", estado_letra2);
+    printf("Código digitado: %c%s \n",estado_letra2, codigo2);
+    printf("Cidade: %s \n", cidade2);
+    printf("População total: %lu \n", populacao2);
+    printf("Área total: %.2f \n", area2);
+    printf("Pib total: %.2f \n", pib2);
+    printf("Número total turistas: %d \n", pturismo2);
     
 
     return 0;
