@@ -11,6 +11,8 @@ int main() {
     float area;
     double pib;
     int pturismo;
+    float densip;
+    float percapta;
 
     printf("Digite uma letra de A a Z \n");
     scanf(" %c", &estado_letra);
@@ -27,11 +29,15 @@ int main() {
     printf("Digite a área total: \n");
     scanf("%f", &area);
     
-    printf("Pib per capta: \n");
+    printf("Pib : \n");
     scanf("%lf", &pib);
     
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pturismo);
+
+    //Aplicando a divisão que efetuará a densidade populacional e o pib per capta.
+    densip = populacao / area;
+    percapta = pib / populacao;
 
     //Recomeçando pra as cartas 2:
     char estado_letra2;
@@ -41,7 +47,8 @@ int main() {
     float area2;
     double pib2;
     int pturismo2;
-    
+    float densip2;
+    float percapta2;
 
     //informações pra digitar:
     printf("Digite uma letra de A a Z \n");
@@ -64,6 +71,11 @@ int main() {
     
     printf("Número de pontos turísticos: \n");
     scanf("%d", &pturismo2);
+    
+    //Calcular a densidade populacional e o PIB per capta
+    densip2 = populacao2 / area2;
+    percapta2 = pib2 / populacao2;
+
 
     //Exibindo parte 1:
     printf("Estado digitado: %c \n", estado_letra);
@@ -73,7 +85,10 @@ int main() {
     printf("Área total: %.2f \n", area);
     printf("Pib total: %.2f \n", pib);
     printf("Número total turistas: %d \n", pturismo);
-    
+    printf("Densidade: %f \n", densip);
+    printf("Per capta: %f \n", percapta);
+
+
     //Exibindo cartas 2:
     printf("Estado digitado: %c \n", estado_letra2);
     printf("Código digitado: %c%s \n",estado_letra2, codigo2);
@@ -82,7 +97,8 @@ int main() {
     printf("Área total: %.2f \n", area2);
     printf("Pib total: %.2f \n", pib2);
     printf("Número total turistas: %d \n", pturismo2);
-    
+    printf("Densidade populacional: %f \n", densip2);
+    printf("Per capta: %f \n", percapta2 );
 
     return 0;
 
