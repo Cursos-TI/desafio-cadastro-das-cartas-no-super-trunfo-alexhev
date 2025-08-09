@@ -38,8 +38,9 @@ int main() {
     //Aplicando a divisão que efetuará a densidade populacional e o pib per capta.
     densip = populacao / area;
     percapta = pib * 1000000000.0 / populacao;
+    denpoder = 1.0 / densip;
     superpoder = pturismo + pib + area + populacao + denpoder;
-    denpoder = 1 / densip;
+    
    
 
     //Recomeçando pra as cartas 2:
@@ -81,8 +82,8 @@ int main() {
     //Cálculos:
     densip2 = populacao2 / area2;
     percapta2 = pib2 * 1000000000.0 / populacao2;
+    denpoder2 = 1.0 / densip2;
     superpoder2 = pturismo2 + pib2 + area2 + populacao2 + denpoder2;
-    denpoder2 = 1 / densip2;
     respopulacao = populacao > populacao2;
     resarea = area > area2;
     respib = pib > pib2;
@@ -113,7 +114,7 @@ int main() {
     printf("Per capta: %f \n", percapta2 );*/
 
     //Resultado vencedor:
-    printf("População: Carta 1 venceu? %f\n Área: Carta 1 venceu? %f\n PIB: Carta 1 venceu?%f\n Pontots turísticos: Carta 1 venceu? %f\n Densidade populaciona: carta 1 venceu?%f\n Super poder: Carta 1 venceu? %f\n",
+    printf("População: Carta 1 venceu? %d\n Área: Carta 1 venceu? %d\n PIB: Carta 1 venceu?%d\n Pontots turísticos: Carta 1 venceu? %d\n Densidade populaciona: carta 1 venceu?%d\n Super poder: Carta 1 venceu? %d\n",
         respopulacao, resarea, respib, respturismo, resultadoDensidade , resultadopoder);
 
     return 0;
