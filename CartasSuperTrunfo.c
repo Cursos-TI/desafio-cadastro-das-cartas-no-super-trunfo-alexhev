@@ -14,14 +14,14 @@ int main() {
     float denpoder, denpoder2;
     float respopulacao, resarea, respib, respturismo;
     float resultadopoder, resultadoDensidade;
-    /*printf("Digite uma letra de A a Z \n");
+    printf("Digite uma letra de A a Z \n");
     scanf(" %c", &estado_letra);
      
     printf("Digite 01 a 04: \n");
     scanf("%s", codigo);
     
     printf("Digite a cidade: \n");
-    scanf(" %[^\n]", cidade);*/
+    scanf(" %[^\n]", cidade);
     
     printf("População total: \n");
     scanf("%lu", &populacao);
@@ -57,14 +57,14 @@ int main() {
 
 
     //informações pra digitar:
-    /*printf("Digite uma letra de A a Z \n");
+    printf("Digite uma letra de A a Z \n");
     scanf(" %c", &estado_letra2);
      
     printf("Digite 01 a 04: \n");
     scanf("%s", codigo2);
     
     printf("Digite a cidade: \n");
-    scanf(" %[^\n]", cidade2);*/
+    scanf(" %[^\n]", cidade2);
     
     printf("População total: \n");
     scanf("%lu", &populacao2);
